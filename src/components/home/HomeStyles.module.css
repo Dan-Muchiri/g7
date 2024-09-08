@@ -79,10 +79,6 @@
 }
 
 
-
-
-
-
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .hero {
@@ -94,7 +90,7 @@
     }
 
     .hero p {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
         max-width: 20ch;
     }
 
