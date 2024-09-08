@@ -2,8 +2,8 @@ import './App.css'
 import Home from './components/home/Home'
 import Header from './components/header/Header'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AboutPage from './components/header/about/About';
-import Footer from './components/footer/Footer';
+import AboutPage from './components/about/About';
+import TestimonialsPage from './components/testimonials/Testimonials';
 
 function App() {
 
@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/testimonials" element={<TestimonialsPage />} />
       </Routes>
-      <Footer/>
     </Router>
   )
 }

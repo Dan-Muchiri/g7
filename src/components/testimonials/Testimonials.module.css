@@ -1,0 +1,116 @@
+/* Testimonials Page Container */
+.testimonialsPage {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 85vh; /* Ensure the page covers the entire viewport height */
+    padding: 0 20px; /* Optional padding */
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: white; 
+    padding: 30px;  
+    position: sticky; /* Sticky positioning for the nav bar */
+    display: flex;
+    justify-content: space-around; /* Spread out items */
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    top: 0; /* Ensure it sticks to the top */
+}
+
+.navList {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Space between navigation items */
+}
+
+.navList li {
+    margin: 0; /* Remove margin to use gap for spacing */
+}
+
+.navButton {
+    background: none;
+    border: solid 1px var(--color-primary-brown);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--primary-dark-green);
+}
+
+.navButton:hover {
+    background-color: var(--color-primary-brown); /* Change background on hover */
+    color: white; /* Change text color on hover */
+    border-color: var(--color-primary-brown); /* Adjust border color if needed */
+}
+
+.navLogo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Testimonial Item */
+.testimonialItem {
+    background-color: var(--color-primary-white);
+    color: var(--color-neutral-charcoal);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the testimonial item */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialLogo {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 15px;
+}
+
+/* Heading */
+.testimonialsPage h2 {
+    font-family: var(--font-primary);
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-primary-brown);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 15px; /* Further adjust padding */
+    }
+
+    .navButton {
+        font-size: 12px; /* Maintain smaller font size */
+        padding: 6px; /* Maintain smaller padding */
+    }
+
+    .navLogo {
+        width: 30px; /* Adjust size as needed */
+        height: auto;
+    }
+
+    .testimonialItem {
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .testimonialLogo {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .testimonialsPage h2 {
+        font-size: 20px;
+    }
+}

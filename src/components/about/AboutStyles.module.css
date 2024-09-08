@@ -1,5 +1,5 @@
 .aboutPage {
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: var(--color-neutral-white);
     color: var(--color-neutral-charcoal);
 }
@@ -8,7 +8,7 @@
 .aboutPage h2 {
     font-family: var(--font-primary);
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--color-primary-brown);
     text-align: center;
     border-bottom: 2px solid var(--color-primary-brown); /* Adding a bottom border for emphasis */
@@ -19,7 +19,7 @@
 .aboutPage p {
     font-family: var(--font-secondary);
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.8; /* Increased line height for readability */
     color: var(--color-neutral-charcoal);
     text-align: justify; /* Justify text for a cleaner look */
@@ -27,7 +27,7 @@
 
 /* Overview Section Styles */
 .overview {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: var(--color-neutral-white); /* Adding background color for visual separation */
     border-radius: 8px; /* Rounded corners for the section */
@@ -37,7 +37,7 @@
 .overviewContent {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .overviewImage {
@@ -53,12 +53,12 @@
 
 .overviewText {
     flex: 1;
-    padding: 20px; /* Padding for spacing inside the text area */
+    padding: 10px; /* Padding for spacing inside the text area */
 }
 
 /* Founder Section Styles */
 .founder {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: var(--color-neutral-white); /* Adding background color for visual separation */
     border-radius: 8px; /* Rounded corners for the section */
@@ -89,7 +89,7 @@
 
 /* Methodology Section Styles */
 .methodology {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: var(--color-neutral-white); /* Adding background color for visual separation */
     border-radius: 8px; /* Rounded corners for the section */
