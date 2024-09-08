@@ -8,7 +8,7 @@ const AboutPage = () => {
             <section className={styles.overview}>
                 <div className={styles.overviewContent}>
                     <img 
-                        src="../../../../public/g7.jpg" 
+                        src="/g7.jpg" 
                         alt="Overview of GW Synergy" 
                         className={styles.overviewImage}
                     />
@@ -36,7 +36,7 @@ const AboutPage = () => {
                         </p>
                     </div>
                     <img 
-                        src="../../../../public/Geoff_Modified.jpeg" 
+                        src="/Geoff_Modified.jpeg" 
                         alt="Founder of GW Synergy" 
                         className={styles.founderImage}
                     />
