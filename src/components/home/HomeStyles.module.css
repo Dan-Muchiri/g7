@@ -1,0 +1,283 @@
+.homePage {
+    font-family: var(--font-secondary);
+    color: var(--color-neutral-charcoal);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    padding: 80px 20px; /* Adjust as needed */
+    height: 65vh; /* Adjusted to cover a portion of viewport height */
+    min-height: 400px; /* Ensure a minimum height for smaller screens */
+    background: url('public/photo-1714255288526-cc155b548aac.avif') no-repeat center center/cover; /* Background image */
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional gradient overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+    z-index: 0;
+}
+
+.hero h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem; /* Larger font size for more impact */
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Larger font size for better readability */
+    margin-bottom: 30px;
+    z-index: 1;
+    position: relative;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+    max-width: 42ch;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.ctaButton {
+    background-color: white;
+    color: var(--color-primary-orange);
+    border: 2px solid var(--color-primary-orange);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+
+.ctaButton:hover {
+    background-color: var(--color-primary-orange);
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 20px 20px;
+    background-color: var(--color-neutral-white); /* Background color for the benefits section */
+    text-align: center;
+}
+
+.benefits h2 {
+    font-family: var(--font-primary);
+    font-size: 35px; /* Increased font size for more impact */
+    margin-bottom: 20px; /* Increased spacing below heading */
+}
+
+.benefitList {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center items horizontally */
+}
+
+.benefitItem {
+    background-color: white;
+    border: 1px solid var(--color-secondary-brown);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    max-width: 300px; /* Adjust width to be more responsive */
+    flex: 1 1 calc(50% - 20px); /* Responsive width, adjusts to fit two items per row */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for hover effects */
+}
+
+.benefitItem:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.benefitItem h3 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-secondary-dark-brown)
+}
+
+.benefitItem p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonialItem {
+    background-color: var(--color-primary-white); /* White background for testimonial items */
+    color: var(--color-neutral-charcoal); /* Charcoal for text */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 30px;
+    max-width: 400px; /* Adjust width to be more responsive */
+    flex: 1 1 calc(50% - 30px); /* Responsive width */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+    margin-bottom: 20px;
+}
+
+/* Testimonial Logo */
+.testimonialLogo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 auto 15px; /* Center the logo and add space below */
+}
+
+
+/* Heading */
+.testimonials h2 {
+    font-family: var(--font-primary);
+    font-size: 35px; /* Increased font size for more impact */
+    margin-bottom: 20px; /* More spacing below heading */
+    text-align: center; /* Center the heading */
+    color: var(--color-primary-brown); /* Primary color for the heading */
+}
+
+/* Testimonial List */
+.testimonialList {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 30px; /* Space between testimonial items */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Testimonial Item */
+.testimonialItem {
+    background-color: white;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 30px;
+    max-width: 400px; /* Adjust width to be more responsive */
+    flex: 1 1 calc(50% - 30px); /* Responsive width, adjusts to fit two items per row */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.testimonialItem:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Testimonial Text */
+.testimonialItem p {
+    font-size: 1.125rem; /* Slightly larger font size for readability */
+    margin-bottom: 15px;
+    line-height: 1.6; /* Increase line height for better readability */
+    color: var(--color-neutral-charcoal); /* Darker color for text */
+}
+
+.testimonialItem h3 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--color-secondary-dark-brown); /* Primary color for the name */
+}
+
+.testimonialItem p:last-of-type {
+    font-style: italic; /* Italicize the position/title for differentiation */
+    color: var(--color-neutral-dark-grey); /* Dark grey color for the position/title */
+}
+
+
+
+
+/* Call to Action Section */
+.callToAction {
+    padding: 40px 20px;
+    background-color: var(--color-primary-brown);
+    color: white;
+    text-align: center;
+}
+
+.callToAction h2 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var( --color-primary-white);
+}
+
+.callToAction p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.callToAction .ctaButton {
+    background-color: white;
+    color: var(--color-primary-orange);
+    border: 2px solid var(--color-primary-orange);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.callToAction .ctaButton:hover {
+    background-color: var(--color-primary-orange);
+    color: white;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+        height: auto; /* Allow height to adjust based on content */
+        padding: 40px 20px; /* Reduced padding for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        max-width: 20ch;
+    }
+
+    .ctaButton {
+        padding: 12px 24px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .benefits h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .benefitList {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 15px; /* Adjust space between cards */
+    }
+
+    .benefitItem {
+        max-width: 100%; /* Ensure cards take full width on smaller screens */
+        flex: 1 1 100%; /* Make each card take full width of the container */
+    }
+}

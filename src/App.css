@@ -1,0 +1,83 @@
+:root {
+  /* Primary Colors */
+  --color-primary-brown: #8B4513; /* Focus on brown */
+  --color-primary-orange: #FF8C00; /* Focus on orange */
+  --color-primary-white: #FFFFFF; /* Added white for balance */
+  --color-primary-blue: #0033A0; /* Blue color for primary usage */
+
+  /* Secondary Colors */
+  --color-secondary-light-brown: #D2B48C; /* Lighter brown */
+  --color-secondary-dark-brown: #5C4033; /* Darker brown */
+  --color-secondary-orange-dark: #FFA500; /* Darker orange */
+
+  /* Neutral Colors */
+  --color-neutral-white: #FFFFFF; /* White */
+  --color-neutral-charcoal: #333333; /* Charcoal for text */
+  --color-neutral-light-grey: #F5F5F5; /* Light grey for backgrounds */
+  --color-neutral-dark-grey: #606060; /* Dark grey for text */
+}
+
+
+/* General Body Styles */
+body {
+  background-color: var(--color-neutral-white); /* White background */
+  color: var(--color-secondary-dark-brown); /* Use dark brown for text */
+  font-family: var(--font-secondary); /* Roboto for body text */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary); /* Poppins for headings */
+  font-weight: 600; /* Bold headings */
+  color: var(--color-primary-brown); /* Brown for headings */
+}
+
+/* Paragraphs */
+p {
+  font-family: var(--font-secondary); /* Roboto for paragraphs */
+  font-weight: 400; /* Regular weight for body text */
+  line-height: 1.6; /* Increase line-height for readability */
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-primary); /* Use Poppins for buttons */
+  font-weight: 500; /* Medium weight for button text */
+  cursor: pointer;
+  background-color: var(--color-primary-orange); /* Orange background for buttons */
+  color: var(--color-neutral-white); /* White text for contrast */
+}
+
+/* Links */
+a {
+  font-family: var(--font-secondary);
+  color: var(--color-primary-brown); /* Brown for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-orange); /* Orange on hover */
+}
+
+/* Apply box-sizing border-box globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins and paddings to zero */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+figure,
+blockquote,
+dl,
+dd,
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+}

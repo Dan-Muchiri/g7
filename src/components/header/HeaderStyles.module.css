@@ -1,0 +1,122 @@
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: var(--color-neutral-white); /* White Background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 70px; /* Adjust this to match your logo's proportions */
+    object-fit: contain;
+}
+
+/* Company Name Styling */
+.companyName {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-primary); /* Poppins for company name */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: 700; /* Bold text */
+    color: var(--color-primary-brown); /* Brown for company name */
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-family: var(--font-secondary); /* Roboto */
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-primary-brown); /* Brown */
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+/* Hover Effect for Links */
+.navbar a:hover {
+    color: var(--color-primary-orange); /* Orange */
+    transform: scale(1.05);
+}
+
+/* Active Link Styling */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary-orange); /* Orange Underline */
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Menu Icon Styling */
+.menuIcon {
+    display: none; /* Hide menu icon by default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        padding: 10px 20px;
+        align-items: center; /* Align items to the start for better mobile layout */
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .companyName {
+        font-size: 14px; /* Adjust font size for mobile screens */
+        margin-left: 15px; /* Ensure margin is consistent on mobile */
+        text-align: center;
+    }
+
+    .menuIcon {
+        display: block; /* Show menu icon on mobile */
+        cursor: pointer;
+        margin-left: auto; /* Align the menu icon to the right */
+    }
+
+    .navbar {
+        position: absolute;
+        top: 90px; /* Adjust based on header height */
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 100%;
+        text-align: center; /* Center-align links in the mobile menu */
+        display: none; /* Hide navigation by default */
+        background-color: var(--color-neutral-white); /* White background for the dropdown */
+        padding: 10px 0; /* Add padding for better spacing */
+        border-top: 1px solid var(--color-primary-brown); /* Brown border for visual separation */
+    }
+
+    .showMenu {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .navbar a {
+        padding: 15px;
+        color: var(--color-primary-brown); /* Brown text for links */
+        font-size: 1.1rem; /* Slightly larger font size for better readability on mobile */
+    }
+}
