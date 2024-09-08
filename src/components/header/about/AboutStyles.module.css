@@ -1,0 +1,131 @@
+.aboutPage {
+    padding: 40px 20px;
+    background-color: var(--color-neutral-white);
+    color: var(--color-neutral-charcoal);
+}
+
+/* Global Styles for Headings */
+.aboutPage h2 {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-primary-brown);
+    text-align: center;
+    border-bottom: 2px solid var(--color-primary-brown); /* Adding a bottom border for emphasis */
+    padding-bottom: 10px;
+}
+
+/* Global Styles for Paragraphs */
+.aboutPage p {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increased line height for readability */
+    color: var(--color-neutral-charcoal);
+    text-align: justify; /* Justify text for a cleaner look */
+}
+
+/* Overview Section Styles */
+.overview {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--color-neutral-white); /* Adding background color for visual separation */
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+.overviewContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.overviewImage {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px; /* Adding border-radius for a modern look */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.overviewImage:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.overviewText {
+    flex: 1;
+    padding: 20px; /* Padding for spacing inside the text area */
+}
+
+/* Founder Section Styles */
+.founder {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--color-neutral-white); /* Adding background color for visual separation */
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+.founderContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.founderImage {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px; /* Adding border-radius for a modern look */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.founderImage:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.founderText {
+    flex: 1;
+    padding: 20px; /* Padding for spacing inside the text area */
+}
+
+/* Methodology Section Styles */
+.methodology {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--color-neutral-white); /* Adding background color for visual separation */
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .aboutPage {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    .aboutPage h2 {
+        font-size: 2rem; /* Smaller heading size for better fit */
+    }
+
+    .aboutPage p {
+        font-size: 1rem; /* Smaller text size for readability */
+        margin-bottom: 15px; /* Reduced margin for smaller screens */
+    }
+
+    .overviewContent, .founderContent {
+        flex-direction: column;
+        gap: 15px; /* Reduced gap between items */
+    }
+
+    .overviewImage, .founderImage {
+        max-width: 100%;
+        margin-bottom: 15px; /* Reduced margin for smaller screens */
+    }
+
+    .overviewText, .founderText {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .methodology {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}

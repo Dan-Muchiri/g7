@@ -1,0 +1,38 @@
+/* Call to Action Section */
+.callToAction {
+    padding: 40px 20px;
+    background-color: var(--color-primary-brown);
+    color: white;
+    text-align: center;
+}
+
+.callToAction h2 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var( --color-primary-white);
+}
+
+.callToAction p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.callToAction .ctaButton {
+    background-color: white;
+    color: var(--color-primary-orange);
+    border: 2px solid var(--color-primary-orange);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.callToAction .ctaButton:hover {
+    background-color: var(--color-primary-orange);
+    color: white;
+}
