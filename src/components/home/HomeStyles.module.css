@@ -12,7 +12,7 @@
     padding: 80px 20px; /* Adjust as needed */
     height: 65vh; /* Adjusted to cover a portion of viewport height */
     min-height: 400px; /* Ensure a minimum height for smaller screens */
-    background: url('public/photo-1714255288526-cc155b548aac.avif') no-repeat center center/cover; /* Background image */
+    background: url('../../../public/photo-1714255288526-cc155b548aac.avif') no-repeat center center/cover; /* Background image */
     color: white;
     text-align: center;
     position: relative;
