@@ -60,9 +60,10 @@
 }
 
 .overviewImage, .founderImage {
-    max-width: 45%; /* Adjusted for better alignment */
+    max-width: 25%; /* Adjusted for better alignment */
     height: auto;
     border-radius: 8px; /* Rounded corners for images */
+    margin-right: 40px;
 }
 
 .overviewText, .founderText {

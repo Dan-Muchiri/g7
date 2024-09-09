@@ -68,7 +68,7 @@ const AboutPage = () => {
                 <section className={styles.founder}>
                     <div className={styles.founderContent}>
                         <img
-                            src="/Geoff_Modified.jpeg"
+                            src="/Untitled.png"
                             alt="Founder of GW Synergy"
                             className={styles.founderImage}
                         />
