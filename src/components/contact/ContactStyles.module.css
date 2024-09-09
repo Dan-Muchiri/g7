@@ -1,0 +1,101 @@
+.contactUs {
+    padding: 60px 30px;
+    background: linear-gradient(135deg, var(--color-neutral-white), var(--color-primary-white));
+    color: var(--color-neutral-charcoal);
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contactUs h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    color: var(--color-primary-brown);
+    margin-bottom: 40px;
+    border-bottom: 3px solid var(--color-primary-brown);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.office {
+    background-color: var(--color-primary-white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 400px;
+    border: 2px solid var(--color-primary-brown);
+}
+
+.office:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.office h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--color-primary-brown);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.office p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-neutral-charcoal);
+    margin-bottom: 12px;
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.otherInfo {
+    margin-top: 40px;
+}
+
+.otherInfo p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-neutral-charcoal);
+}
+
+.otherInfo a {
+    color: var(--color-primary-orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.otherInfo a:hover {
+    color: var(--color-secondary-orange-dark);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contactInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .office {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -6,6 +6,7 @@ import AboutPage from './components/about/About';
 import TestimonialsPage from './components/testimonials/Testimonials';
 import Services from './components/services/Services';
 import Impacts from './components/impact/Impact';
+import ContactUs from './components/contact/Contact';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/impact" element={<Impacts />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </Router>
   )
