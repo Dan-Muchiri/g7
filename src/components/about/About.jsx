@@ -26,7 +26,7 @@ const AboutPage = () => {
                             className={styles.navButton}
                             onClick={() => handleNavClick('founder')}
                         >
-                            The Founder
+                            The Founder & CEO
                         </button>
                     </li>
                     <li>
@@ -73,7 +73,7 @@ const AboutPage = () => {
                             className={styles.founderImage}
                         />
                         <div className={styles.founderText}>
-                            <h2>The Founder</h2>
+                            <h2>The Founder & CEO</h2>
                             <p>
                                 Mr. Geoff Ridden, the founder of GW Synergy, is also the CEO of G7 Systems LLC (USA) and Managing Director of GW Synergy. Since founding GW Synergy in 1996, he has transformed it from an Information Warehousing services company into a leader in sustainable development in rural Kenya through ethical outsourcing. Mr. Ridden established the New Ventures division in 2008 to provide sustainable employment for rural Kenyans without university education. Additionally, he created Shieywe Trust, a recording label supporting local Kenyan artists. Mr. Ridden holds a Bachelor's degree in Mathematics from the University of Waterloo and an MBA from Simon Fraser University. He also serves as a Director of Afretech Aid Society (Canada) and Afretech Inc (USA).
                             </p>
