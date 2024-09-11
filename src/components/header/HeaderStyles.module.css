@@ -39,11 +39,43 @@
     font-family: var(--font-secondary); /* Roboto */
     font-size: 1rem;
     font-weight: 500;
-    color: var(--color-primary-brown); /* Brown */
     text-decoration: none;
     padding: 10px;
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
+}
+
+/* Different Colors for Each Link */
+.linkHome {
+    color: darkblue;
+}
+
+.linkWhyGW {
+    color: purple;
+}
+
+.linkServices {
+    color: brown;
+}
+
+.linkMethodology {
+    color: orangered;
+}
+
+.linkTestimonials {
+    color: #3f51b5;
+}
+
+.linkCSR {
+    color: green;
+}
+
+.linkLeadership {
+    color: rgb(218, 76, 123);
+}
+
+.linkContact {
+    color: var(--color-primary-brown);
 }
 
 /* Hover Effect for Links */
@@ -74,7 +106,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .header {
         flex-direction: row;
         padding: 10px 20px;
@@ -116,7 +148,6 @@
 
     .navbar a {
         padding: 15px;
-        color: var(--color-primary-brown); /* Brown text for links */
         font-size: 1.1rem; /* Slightly larger font size for better readability on mobile */
     }
 }

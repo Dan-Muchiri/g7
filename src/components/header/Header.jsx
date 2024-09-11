@@ -16,17 +16,20 @@ const Header = () => {
                 <img src="/logo.jpeg" alt="logo" />
             </div>
             <div className={styles.companyName}>
-               <h1>GW Synergy</h1>
+                <h1>GW Synergy</h1>
             </div>
             <div className={styles.menuIcon} onClick={toggleMenu}>
                 {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </div>
             <nav className={`${styles.navbar} ${isMenuOpen ? styles.showMenu : ''}`}>
-                <Link to="/" onClick={toggleMenu}>Home</Link>
-                <Link to="/services" onClick={toggleMenu}>Our Services</Link>
-                <Link to="/impact" onClick={toggleMenu}>Impact & Initiatives</Link>
-                <Link to="/about" onClick={toggleMenu}>About Us</Link>
-                <Link to="/contact" onClick={toggleMenu}>Contact Us</Link>
+                <Link to="/" className={styles.linkHome} onClick={toggleMenu}>Home</Link>
+                <Link to="/why-gw-synergy" className={styles.linkWhyGW}>Why GW?</Link>
+                <Link to="/services" className={styles.linkServices}>Services</Link>
+                <Link to="/success-methodology" className={styles.linkMethodology}>Methodology</Link>
+                <Link to="/testimonials" className={styles.linkTestimonials}>Testimonials</Link>
+                <Link to="/csr" className={styles.linkCSR}>CSR</Link>
+                <Link to="/leadership" className={styles.linkLeadership}>Leadership</Link>
+                <Link to="/contact" className={styles.linkContact}>Contact</Link>
             </nav>
         </header>
     );
