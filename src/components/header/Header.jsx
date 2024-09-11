@@ -23,13 +23,13 @@ const Header = () => {
             </div>
             <nav className={`${styles.navbar} ${isMenuOpen ? styles.showMenu : ''}`}>
                 <Link to="/" className={styles.linkHome} onClick={toggleMenu}>Home</Link>
-                <Link to="/why-gw-synergy" className={styles.linkWhyGW}>Why GW?</Link>
-                <Link to="/services" className={styles.linkServices}>Services</Link>
-                <Link to="/success-methodology" className={styles.linkMethodology}>Methodology</Link>
-                <Link to="/testimonials" className={styles.linkTestimonials}>Testimonials</Link>
-                <Link to="/csr" className={styles.linkCSR}>CSR</Link>
-                <Link to="/leadership" className={styles.linkLeadership}>Leadership</Link>
-                <Link to="/contact" className={styles.linkContact}>Contact</Link>
+                <Link to="/why-gw-synergy" className={styles.linkWhyGW} onClick={toggleMenu}>Why GW?</Link>
+                <Link to="/services" className={styles.linkServices} onClick={toggleMenu}>Services</Link>
+                <Link to="/success-methodology" className={styles.linkMethodology} onClick={toggleMenu}>Methodology</Link>
+                <Link to="/testimonials" className={styles.linkTestimonials} onClick={toggleMenu}>Testimonials</Link>
+                <Link to="/csr" className={styles.linkCSR} onClick={toggleMenu}>CSR</Link>
+                <Link to="/leadership" className={styles.linkLeadership} onClick={toggleMenu}>Leadership</Link>
+                <Link to="/contact" className={styles.linkContact} onClick={toggleMenu}>Contact</Link>
             </nav>
         </header>
     );

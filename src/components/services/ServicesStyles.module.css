@@ -1,144 +1,104 @@
-/* Testimonials Page Container */
-.servicesPage {
+/* Full-screen background image */
+.servicesSection {
+    padding: 30px;
+    min-height: 90vh; /* Full screen height */
+    background-image: url('/tech.avif'); /* Tech-themed background image */
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    min-height: 85vh; /* Ensure the page covers the entire viewport height */
-    padding: 0 20px; /* Optional padding */
-}
-
-/* Navigation Bar */
-.nav {
-    background-color: white; 
-    padding: 20px 40px; 
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-.navList {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 15px;
-}
-
-.navList li {
-    margin: 0;
-}
-
-.navButton {
-    background: none;
-    border: solid 1px var(--color-primary-brown);
-    border-radius: 12px;
-    padding: 12px 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    color: var(--primary-dark-green);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navButton:hover {
-    background-color: var(--color-primary-brown);
+    position: relative;
     color: white;
-    border-color: var(--color-primary-brown);
 }
 
-/* Section Styles */
+/* Content container */
+.content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
-.serviceSection {
-    padding: 40px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* Heading styling */
+.content h1 {
+    font-size: 2.3rem;
+    color: purple; /* Custom color for heading */
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.serviceContent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+/* List styling */
+.content ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: green; /* Custom color for list items */
 }
 
-.serviceImage {
-    min-width: 25%; /* Adjust as needed */
-    height: auto;
-    border-radius: 8px;
-}
-
-
-.serviceSection h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--primary-dark-green);
-    border-bottom: 2px solid var(--color-primary-brown);
-    padding-bottom: 10px;
-}
-
-.serviceSection p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+ul li {
     margin-bottom: 15px;
-    max-width: 90ch;
 }
 
-/* Responsive Styles for Small Screens */
+/* Image container */
+.imageContainer {
+    margin-top: 20px;
+}
+
+/* Balanced Scorecard image styling */
+.balancedScoreCardImage {
+    max-width: 90%; /* Ensures responsiveness */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-
-    /* Navigation Bar */
-    .nav {
-        padding: 15px 20px;
-        flex-direction: column;
-        align-items: flex-start;
+    /* Content container adjustments */
+    .content {
+        padding: 15px;
+        max-width: 100%;
     }
 
-
-    .navButton {
-        font-size: 12px;
-        padding: 8px 12px;
-        width: 100%;
-        text-align: left;
-    }
-
-    /* Section Styles */
-    .serviceSection {
-        padding: 30px 20px;
-    }
-
-    .serviceContent {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .serviceImage {
-        max-width: 300px;
-        width: 100%; /* Ensure it fills the container */
-        height: auto;
-        border-radius: 8px;
-    }
-
-    .serviceSection h2 {
+    /* Heading adjustments */
+    .content h1 {
         font-size: 2rem;
         margin-bottom: 15px;
     }
 
-    .serviceSection p {
+    /* List adjustments */
+    .content ul {
         font-size: 1rem;
-        line-height: 1.5;
-        max-width: 100%;
     }
 
-    /* Adjust spacing for smaller screens */
-    .serviceSection {
-        margin-bottom: 15px;
+    /* Adjust the image size for smaller screens */
+    .balancedScoreCardImage {
+        max-width: 90%; /* Make the image larger on small screens */
     }
 }
 
+@media (max-width: 480px) {
+    /* Additional adjustments for very small screens */
+    .content {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content ul {
+        font-size: 0.9rem;
+    }
+
+    .balancedScoreCardImage {
+        max-width: 95%; /* Increase image size even more for small devices */
+    }
+}
