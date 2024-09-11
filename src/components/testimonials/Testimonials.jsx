@@ -4,6 +4,7 @@ import metlifeLogo from '../../../public/met-life-logo.png';
 import cignaLogo from '../../../public/Cigna-Logo.wine.svg';
 import nationsRentLogo from '../../../public/Nations_Rent-logo-A1B0589EDC-seeklogo.com.gif';
 import selectiveInsuranceLogo from '../../../public/selective.png';
+import hartfordLogo from '../../../public/hartford.png'; // Add the logo for The Hartford
 
 const testimonials = [
     {
@@ -33,6 +34,13 @@ const testimonials = [
         text: `"GW Synergy worked hand in hand with our Business and Information Technology personnel to create a Proof Of Concept, which demonstrated the value we could obtain from an information warehouse. Containing 24 months of Selective production data and leveraging SQL Server and COGNOS, GW Synergy delivered over our Intranet, in less than 3 months, a set of production data that is difficult to obtain today."`,
         name: 'Richard Connell',
         position: 'Executive Vice President, Selective Insurance Group'
+    },
+    {
+        id: 'hartfordSteamBoiler',
+        logo: hartfordLogo,
+        text: `"GW Synergy personnel effectively accomplished the majority of database, front-end, telephony and DSS design and development demonstrating their technical prowess. …GW Synergy’s flexible approach and range of technical expertise easily accommodated unforeseen changes. I would recommend GW Synergy to companies seeking a cost-effective, responsive and very capable team of technical information technology experts to help solve their business needs."`,
+        name: 'Neil Shah',
+        position: 'Vice President, The Hartford'
     }
 ];
 
