@@ -1,0 +1,85 @@
+/* Leadership Page Container */
+.aboutPage {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 85vh; /* Ensure the page covers the entire viewport height */
+    padding: 0 20px; /* Optional padding */
+}
+
+/* Combined Content */
+.leadership {
+    padding: 40px;
+    background-color: white; /* Light background for sections */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space between sections */
+    max-width: 1200px; /* Adjust width as needed */
+}
+
+/* Content Styling */
+.leadershipContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 40px; /* Space between each leadership content */
+}
+
+.leadershipImage {
+    max-width: 25%; /* Adjusted for better alignment */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-right: 40px;
+}
+
+.leadershipText {
+    max-width: 75%;
+}
+
+.leadershipText h2 {
+    font-size: 30px; /* Increased font size for the heading */
+    margin-bottom: 20px;
+    color: green; /* Match text color with theme */
+    border-bottom: 2px solid var(--color-primary-brown); /* Underline effect */
+    padding-bottom: 10px; /* Space between heading and text */
+}
+
+.leadershipText p {
+    font-size: 1.1rem; /* Slightly larger text */
+    line-height: 1.6; /* Improve readability with line-height */
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .leadershipContent {
+        flex-direction: column; /* Stack images and text vertically */
+        align-items: center; /* Center align content */
+        gap: 15px; /* Reduced gap */
+    }
+
+    .leadershipImage {
+        max-width: 90%; /* Increase max-width for better fit */
+        border-radius: 8px; /* Ensure rounded corners */
+    }
+
+    .leadershipText {
+        max-width: 100%; /* Full width text container */
+        text-align: center; /* Center align text on mobile */
+    }
+
+    .leadershipText h2 {
+        font-size: 25px; /* Smaller heading size for mobile */
+        border-bottom: 1px solid var(--color-primary-brown); /* Thinner underline */
+        padding-bottom: 5px; /* Reduced padding */
+    }
+
+    .leadershipText p {
+        font-size: 1rem; /* Adjust text size for readability */
+        margin-bottom: 10px; /* Reduced bottom margin */
+    }
+}

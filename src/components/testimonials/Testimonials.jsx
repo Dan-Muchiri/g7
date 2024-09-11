@@ -72,7 +72,6 @@ const TestimonialsPage = () => {
                 </ul>
             </nav>
 
-            <h2>{currentTestimonial.id.charAt(0).toUpperCase() + currentTestimonial.id.slice(1).replace(/([A-Z])/g, ' $1').trim()} Testimonial</h2>
             <div className={styles.testimonialItem}>
                 <img src={currentTestimonial.logo} alt={`${currentTestimonial.id} Logo`} className={styles.testimonialLogo} />
                 <p>{currentTestimonial.text}</p>

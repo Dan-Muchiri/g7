@@ -27,7 +27,7 @@ const Header = () => {
                 <Link to="/services" className={styles.linkServices} onClick={toggleMenu}>Services</Link>
                 <Link to="/success-methodology" className={styles.linkMethodology} onClick={toggleMenu}>Methodology</Link>
                 <Link to="/testimonials" className={styles.linkTestimonials} onClick={toggleMenu}>Testimonials</Link>
-                <Link to="/csr" className={styles.linkCSR} onClick={toggleMenu}>CSR</Link>
+                <Link to="/csr" className={styles.linkCSR} onClick={toggleMenu}>Social Responsibility</Link>
                 <Link to="/leadership" className={styles.linkLeadership} onClick={toggleMenu}>Leadership</Link>
                 <Link to="/contact" className={styles.linkContact} onClick={toggleMenu}>Contact</Link>
             </nav>

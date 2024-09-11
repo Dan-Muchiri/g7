@@ -4,7 +4,13 @@ import styles from './WhyStyles.module.css';
 const WhyGWSynergy = () => {
     return (
         <section className={styles.whyGW}>
-            <div className={styles.overlay}></div>
+            <div className={styles.imageContainer}>
+                <img
+                    src="/why.jpg" /* Adjust path to your image */
+                    alt="Why GW Synergy"
+                    className={styles.backgroundImage}
+                />
+            </div>
             <div className={styles.content}>
                 <h1>Why GW Synergy?</h1>
                 <ul>

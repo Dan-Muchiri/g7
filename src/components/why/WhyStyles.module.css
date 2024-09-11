@@ -1,44 +1,44 @@
-/* Full-screen background image */
+/* Full-width and full-height section */
 .whyGW {
+    display: flex;
     min-height: 95vh; /* Full screen height */
-    background-image: url('/why.jpg'); /* Adjust path to your image */
-    background-size: cover;
-    background-position: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    flex-direction: row; /* Ensure the image and content are side by side */
+}
+
+/* Image container on the left */
+.imageContainer {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    overflow: hidden;
 }
 
-/* Semi-transparent overlay for better text visibility */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0); /* Dark overlay */
-    z-index: 1;
+.backgroundImage {
+    width: 80%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 10px; /* Add border radius to the image */
 }
 
-/* Card container for content */
+/* Content container on the right */
 .content {
-    position: relative;
-    z-index: 2;
+    flex: 2;
     background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-    border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
     max-width: 600px;
     width: 90%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    /* Remove box shadow and border radius from content */
 }
 
 /* Heading styling */
 .content h1 {
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
-    color: var(--color-primary-blue); /* Brown text */
+    color: var(--color-primary-blue); /* Custom text color */
     margin-bottom: 20px;
 }
 
@@ -47,7 +47,7 @@ ul {
     list-style: none;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: var(--color-neutral-charcoal);
 }
 
@@ -57,15 +57,45 @@ ul li {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+    .whyGW {
+        flex-direction: column; /* Stack the image and content vertically */
+        text-align: center; /* Center text */
     }
 
-    ul {
-        font-size: 1rem;
+    .imageContainer {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 20px; /* Space between image and content */
+    }
+
+    .backgroundImage {
+        width: 90%; /* Adjust width for small screens */
+        border-radius: 10px; /* Keep border radius for image */
     }
 
     .content {
-        padding: 30px;
+        width: 100%; /* Full width for small screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .content h1 {
+        font-size: 2rem; /* Smaller font size for heading */
+    }
+
+    ul {
+        font-size: 1.2rem; /* Adjust font size for list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .content h1 {
+        font-size: 1.8rem; /* Further reduce font size for heading */
+    }
+
+    ul {
+        font-size: 1rem; /* Further reduce font size for list items */
     }
 }
