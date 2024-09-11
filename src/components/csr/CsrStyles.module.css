@@ -1,0 +1,109 @@
+/* Full-width and full-height section */
+.csrSection {
+    display: flex;
+    min-height: 95vh; /* Full screen height */
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 20px;
+}
+
+.topMidImageContainer {
+    position: absolute;
+    top: 20px; /* Adjust to position from the top */
+    right: 20px; /* Adjust to position from the right */
+    z-index: 1;
+}
+
+.topLeftImage {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Add border radius if needed */
+}
+
+.topMidImage {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Add border radius if needed */
+}
+
+/* Content container on the left */
+.content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.content h1 {
+    font-size: 2rem;
+    color: brown; /* Custom text color */
+    margin-bottom: 15px;
+}
+.content h2 {
+    color: brown; /* Custom text color */
+    margin-bottom: 20px;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-neutral-charcoal);
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+/* Image container on the right */
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+/* CSR image styling */
+.csrImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border radius to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .csrSection {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .csrImage {
+        width: 100%; /* Ensure image is full width on smaller screens */
+    }
+}
+
+@media (max-width: 540px) {
+    /* Hide absolute images on very small screens */
+    .topMidImageContainer {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        font-size: 1rem;
+    }
+}
