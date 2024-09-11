@@ -21,8 +21,8 @@ const ContactUs = () => {
                         <img src="https://flagcdn.com/ke.svg" alt="Kenya Flag" className={styles.flag} /> Kenya Office
                     </h3>
                     <p>MMUST EPZ Science & Technology Park,<br />Kakamega, 687-50100, Kenya</p>
-                    <p><strong>Tel:</strong> 254-56-31738 [International]</p>
-                    <p><strong>Tel:</strong> 0723-686-472 [Mobile]</p>
+                    <p><strong>Tel:</strong> 254 706 136 472[International]</p>
+                    <p><strong>Tel:</strong> 07 06 136 472 [Mobile]</p>
                 </div>
             </div>
             <div className={styles.otherInfo}>
