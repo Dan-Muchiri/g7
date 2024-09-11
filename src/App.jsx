@@ -7,6 +7,7 @@ import TestimonialsPage from './components/testimonials/Testimonials';
 import Services from './components/services/Services';
 import Impacts from './components/impact/Impact';
 import ContactUs from './components/contact/Contact';
+import WhyGWSynergy from './components/why/Why';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/impact" element={<Impacts />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/why-gw-synergy" element={<WhyGWSynergy />} />
       </Routes>
     </Router>
   )

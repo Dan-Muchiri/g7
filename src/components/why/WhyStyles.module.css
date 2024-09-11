@@ -1,0 +1,71 @@
+/* Full-screen background image */
+.whyGW {
+    min-height: 95vh; /* Full screen height */
+    background-image: url('/why.jpg'); /* Adjust path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Semi-transparent overlay for better text visibility */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Card container for content */
+.content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.85); /* White background with slight transparency */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading styling */
+.content h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-primary-blue); /* Brown text */
+    margin-bottom: 20px;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-neutral-charcoal);
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    ul {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 30px;
+    }
+}

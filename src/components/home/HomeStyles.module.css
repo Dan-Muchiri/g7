@@ -21,7 +21,7 @@
     height: 100%;
     background: url('../../../public/nairobi.jpg') no-repeat center center/cover; 
     z-index: -1;
-    filter: brightness(60%);
+
 }
 
 /* Top Image */
