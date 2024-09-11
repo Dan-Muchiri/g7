@@ -8,15 +8,9 @@
     padding: 20px;
 }
 
-.topMidImageContainer {
-    position: absolute;
-    top: 20px; /* Adjust to position from the top */
-    right: 20px; /* Adjust to position from the right */
-    z-index: 1;
-}
 
 .topLeftImage {
-    width: 100px; /* Adjust size as needed */
+    width: 120px; /* Adjust size as needed */
     height: auto;
     border-radius: 10px; /* Optional: Add border radius if needed */
 }
@@ -25,6 +19,7 @@
     width: 150px; /* Adjust size as needed */
     height: auto;
     border-radius: 10px; /* Optional: Add border radius if needed */
+    margin-right: 300px;
 }
 
 /* Content container on the left */
@@ -90,6 +85,20 @@ ul li {
 
     .csrImage {
         width: 100%; /* Ensure image is full width on smaller screens */
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+    }
+    .topMidImage {
+        margin-right: 30px;
+    }
+    .topLeftImage {
+        width: 100px; /* Adjust size as needed */
+    }
+    
+    .topMidImage {
+        width: 130px; /* Adjust size as needed */
     }
 }
 

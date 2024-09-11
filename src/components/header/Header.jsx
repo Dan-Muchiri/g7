@@ -16,7 +16,7 @@ const Header = () => {
                 <img src="/logo.jpeg" alt="logo" />
             </div>
             <div className={styles.companyName}>
-                <h1>GW Synergy</h1>
+                <h1>GW Synergy LLP</h1>
             </div>
             <div className={styles.menuIcon} onClick={toggleMenu}>
                 {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
