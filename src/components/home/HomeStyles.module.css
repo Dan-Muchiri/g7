@@ -262,7 +262,7 @@
 
     .hero {
         padding: 20px;
-        width: 78%; /* Reduced width */
+        width: 90%; /* Reduced width */
         max-width: 600px; /* Optional: Set a maximum width for very small screens */
         margin: 0 auto; /* Center the hero section */
     }

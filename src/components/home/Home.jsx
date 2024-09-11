@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className={styles.homePage}>
             {/* Small Image Positioned Absolutely */}
             <img 
-                src="../../../public/hands.png" 
+                src="/hands.png" 
                 alt="Small Decorative" 
                 className={styles.topImage} 
             />
